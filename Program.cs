@@ -6,8 +6,8 @@ string[] GetArray()
             
     string[] original = Console.ReadLine().Split(' ');
     string[] result = new string[original.Length];
+    
     int i = 0;
-            
     foreach (string value in original)
         {
             if (value.Length <= 3)
@@ -19,15 +19,11 @@ string[] GetArray()
     return result;
 }
 
-
-
-
-
-void PrintArray(string[] matr)
+void PrintArray(string[] array)
     {
-        for (int i = 0; i < matr.GetLength(0); i++)
+        for (int i = 0; i < array.GetLength(0); i++)
             {
-                System.Console.Write($"{matr[i]} ");
+                System.Console.Write($"{array[i]} ");
             }  
     }
 
